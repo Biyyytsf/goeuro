@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoEuro | Study Abroad Consultants</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7fb;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #0b5ed7, #063a9f);
+      color: #fff;
+      padding: 20px 60px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1') center/cover no-repeat;
+      color: #fff;
+    }
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 750px;
+      margin: auto;
+    }
+    .hero button {
+      margin-top: 25px;
+      padding: 14px 28px;
+      font-size: 16px;
+      background: #ffc107;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h3 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #0b5ed7;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card h4 {
+      color: #0b5ed7;
+      margin-top: 0;
+    }
+
+    .stats {
+      background: #fff;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      padding: 50px;
+      text-align: center;
+    }
+    .stats h2 { color: #0b5ed7; margin: 0; }
+
+    .contact {
+      background: linear-gradient(135deg, #063a9f, #0b5ed7);
+      color: #fff;
+      padding: 60px 20px;
+    }
+    .contact form {
+      max-width: 650px;
+      margin: auto;
+      background: #fff;
+      color: #333;
+      padding: 35px;
+      border-radius: 12px;
+    }
+    .contact label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .contact button {
+      margin-top: 25px;
+      background: #0b5ed7;
+      color: #fff;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #022c6f;
+      color: #fff;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>GoEuro</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#countries">Destinations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Study Abroad with Confidence</h2>
+  <p>GoEuro helps students study in top international universities with expert counseling, transparent process, and visa success.</p>
+  <button>Get Free Counseling</button>
+</section>
+
+<section class="section" id="services">
+  <h3>Our Services</h3>
+  <div class="cards">
+    <div class="card"><h4>Career Counseling</h4><p>One-on-one guidance to choose the right country, course, and university.</p></div>
+    <div class="card"><h4>Admissions Support</h4><p>Complete help with applications, SOPs, and offer letters.</p></div>
+    <div class="card"><h4>Visa Assistance</h4><p>Accurate documentation and interview preparation for higher success.</p></div>
+    <div class="card"><h4>Scholarships</h4><p>Guidance for merit-based and need-based scholarships.</p></div>
+  </div>
+</section>
+
+<section class="section" id="countries">
+  <h3>Popular Destinations</h3>
+  <div class="cards">
+    <div class="card"><h4>United Kingdom</h4><p>Top-ranked universities with global recognition.</p></div>
+    <div class="card"><h4>Germany</h4><p>Low-cost education and strong engineering programs.</p></div>
+    <div class="card"><h4>Italy</h4><p>Affordable degrees with rich culture and lifestyle.</p></div>
+    <div class="card"><h4>France</h4><p>Innovation-focused education and research excellence.</p></div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><h2>500+</h2><p>Students Guided</p></div>
+  <div><h2>20+</h2><p>Partner Universities</p></div>
+  <div><h2>95%</h2><p>Visa Success Rate</p></div>
+</section>
+
+<section class="contact" id="contact">
+  <h3 style="text-align:center;">Book Free Consultation</h3>
+  <form>
+    <label>Full Name</label>
+    <input type="text" placeholder="Your name" />
+    <label>Email</label>
+    <input type="email" placeholder="Your email" />
+    <label>Message</label>
+    <textarea rows="5" placeholder="Your query"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 GoEuro | Study Abroad Consultants. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
